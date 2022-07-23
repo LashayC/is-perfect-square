@@ -29,10 +29,13 @@ public final class Square {
     if(input < 0){
       throw new IllegalArgumentException();
     }
-    if(Math.sqrt((long)input) % 1 != 0){
-      return false;
-    }else{
+
+    long num = (long)Math.sqrt(input); //What's the order of operations. Is Math being wrapped in long first?
+
+    if(input == num * num){
       return true;
+    }else{
+      return false;
     }
 
 
