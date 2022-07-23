@@ -1,5 +1,7 @@
 package com.tlglearning;
 
+import java.math.BigInteger;
+
 /**
  * Defines a single static method, {@link #isPerfectSquare(long)}, which evaluates a specified value
  * to determine whether it is a perfect square.
@@ -23,10 +25,11 @@ public final class Square {
    * @throws IllegalArgumentException When {@code input} is negative..
    */
   public static boolean isPerfectSquare(long input) throws IllegalArgumentException {
+
     if(input < 0){
       throw new IllegalArgumentException();
     }
-    if(Math.sqrt((double)input) % 1 != 0){
+    if(Math.sqrt((long)input) % 1 != 0){
       return false;
     }else{
       return true;
