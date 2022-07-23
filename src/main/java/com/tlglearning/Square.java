@@ -20,7 +20,7 @@ public final class Square {
    *
    * @param input Value to be tested.
    * @return Flag indicating whether {@code input} is a perfect square or not.
-   * @throws IllegalArgumentException When {@code input} is negative.
+   * @throws IllegalArgumentException When {@code input} is negative..
    */
   public static boolean isPerfectSquare(long input) throws IllegalArgumentException {
     if(input < 0){
